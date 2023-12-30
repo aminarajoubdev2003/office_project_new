@@ -8,17 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class City extends Model
 {
     use HasFactory;
-
     protected $fillable = [
         'name',
         'country',
     ];
-
-    public function tickets() {
+    public function tickets()
+    {
         return $this->hasMany(Ticket::class);
     }
-
-    public function hotels() {
+    public function hotel() {
         return $this->hasMany(Hotel::class);
     }
 }

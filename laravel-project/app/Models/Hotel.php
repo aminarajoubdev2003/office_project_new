@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
+
 class Hotel extends Model
 {
     use HasFactory;
@@ -18,11 +19,13 @@ class Hotel extends Model
         return $this->belongsTo(City::class);
     }
 
-    public function bookings() {
-        return $this->hasMany(Booking::class);
-    }
-
-    public function ratings() {
+    public function ratings()
+    {
         return $this->hasMany(Rating::class);
     }
+    public function booking()
+    {
+        return $this->hasMany(Booking::class);
+    }
 }
+    

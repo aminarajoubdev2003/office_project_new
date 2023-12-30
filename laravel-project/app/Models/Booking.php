@@ -13,15 +13,17 @@ class Booking extends Model
         'ticket_id',
         'customer_id',
         'hotel_id',
-        'book_date'
+        'book_date',
     ];
 
     public function ticket() {
         return $this->belongsTo(Ticket::class);
     }
+
     public function customer() {
         return $this->belongsTo(Customer::class);
     }
+
     public function hotel() {
         return $this->belongsTo(Hotel::class);
     }

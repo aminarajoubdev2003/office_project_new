@@ -19,6 +19,7 @@ class Rating extends Model
     public function customer() {
         return $this->belongsTo(Customer::class);
     }
+
     public function hotel() {
         return $this->belongsTo(Hotel::class);
     }

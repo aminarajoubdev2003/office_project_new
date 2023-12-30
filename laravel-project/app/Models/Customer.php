@@ -8,23 +8,22 @@ use Illuminate\Database\Eloquent\Model;
 class Customer extends Model
 {
     use HasFactory;
-
     protected $fillable = [
         'name',
         'mobile',
         'gender',
         'email',
     ];
-
-    public function tickets() {
+    public function tickets()
+    {
         return $this->hasMany(Ticket::class);
     }
-
-    public function bookings() {
-        return $this->hasMany(Booking::class);
-    }
-
-    public function ratings() {
+    public function ratings()
+    {
         return $this->hasMany(Rating::class);
+    }
+    public function bookings()
+    {
+        return $this->hasMany(Booking::class);
     }
 }
