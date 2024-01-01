@@ -327,17 +327,17 @@ return [
         ],
         [
             'text' => 'company',
-            'url'  => 'admin/settings',
+            'url'  => 'companyshow',
             'icon' => 'fas fa-fw fa-university',
         ],
         [
             'text' => 'Hotels',
-            'url'  => 'admin/settings',
+            'url'  => 'hotel',
             'icon' => 'fas fa-fw  fa-bed',
         ],
         [
             'text' => 'Rating',
-            'url'  => 'admin/settings',
+            'url'  => 'rating/all',
             'icon' => 'fas fa-fw fa-signal',
         ],
         [
@@ -347,63 +347,23 @@ return [
         ],
         [
             'text' => 'Booking',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw  fa-fighter-jet',
+            'url'  => 'Bookingshow',
+            'icon' => 'fa fa-check',
         ],
         [
-            'text'    => 'multilevel',
-            'icon'    => 'fas fa-fw fa-share',
-            'submenu' => [
-                [
-                    'text' => 'level_one',
-                    'url'  => '#',
-                ],
-                [
-                    'text'    => 'level_one',
-                    'url'     => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'level_two',
-                            'url'  => '#',
-                        ],
-                        [
-                            'text'    => 'level_two',
-                            'url'     => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                            ],
-                        ],
-                    ],
-                ],
-                [
-                    'text' => 'level_one',
-                    'url'  => '#',
-                ],
-            ],
-        ],
-        ['header' => 'labels'],
-        [
-            'text'       => 'important',
-            'icon_color' => 'red',
-            'url'        => '#',
+            'text' => 'Customer',
+            'url'  => 'indexcustomer',
+            'icon' => 'fas fa-fw fa-user',
         ],
         [
-            'text'       => 'warning',
-            'icon_color' => 'yellow',
-            'url'        => '#',
+            'text' => 'City',
+            'url'  => 'city/all',
+            'icon' => 'fa fa-university',
         ],
-        [
-            'text'       => 'information',
-            'icon_color' => 'cyan',
-            'url'        => '#',
-        ],
+        
+        
+        
+         
     ],
 
     /*
